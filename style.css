@@ -7,3 +7,9 @@
 ul {
   list-style-type: none;
 }
+
+button {
+  background-color: limegreen;
+  padding: 0.5rem 2rem;
+  font: #fff;
+}
