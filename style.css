@@ -4,12 +4,95 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0 20rem 0 20rem;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 ul {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-right: 10px;
+}
+
+/* Hero  */
+
+.hero {
+  padding: 1rem 4rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgrey;
+}
+
+.hero-content {
 }
 
 button {
-  background-color: limegreen;
-  padding: 0.5rem 2rem;
-  font: #fff;
+  background-color: #396050;
+  padding: 0.5rem 2.5rem;
+  font-size: 13px;
+  color: #fff;
 }
+
+button:hover {
+  background-color: #497142;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Contact Us*/
+
+.contact-image {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.image-container {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.rounded-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.rounded-checkbox:checked {
+  appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+  background-color: lightgray;
+}
+
+/* Footer */
