@@ -1,49 +1,59 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
-html {
+body {
   margin: 0 20rem 0 20rem;
-  /* font-family: "Afacad", sans-serif; */
-  /* font-family: "Lexend", sans-serif; */
-  font-family: "Kanit", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-/* Header */
+a {
+  color: #fff;
+}
+img {
+  max-width: 100%;
+}
 
-.site-header {
-  display: flex;
+/* Navbar */
+
+.navbar {
   align-items: center;
-  padding: 1rem;
+  padding: 20px;
 }
 
-.site-header__wrapper {
+.navbar .container {
   display: flex;
-  flex: 1 1 100%;
   justify-content: space-between;
-  margin-left: 2rem;
   align-items: center;
+  flex: 1 1 100%;
+  /* margin-left: 2rem; */
 }
 
-ul {
+.navbar ul {
   display: flex;
-  list-style: none;
-  padding: 0;
-  font-family: "Gill Sans", sans-serif;
+  padding-right: 5rem;
+  font-weight: 600;
 }
 
-li {
+.navbar ul li {
   padding: 0 1rem 0 1rem;
+  list-style: none;
+  display: block;
 }
 
-input {
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container input {
   padding: 0.7rem 8rem 0.7rem 0.5rem;
   font-size: 14px;
   font-weight: bold;
   border-color: #3a6150;
-  margin-right: 3rem;
 }
 
 ::placeholder {
@@ -61,7 +71,6 @@ input {
 .hero {
   padding: 2rem 4rem 2rem 4rem;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: #f9f9f9;
 }
@@ -71,15 +80,19 @@ input {
 }
 
 button {
+  display: inline-block;
   background-color: #3a6150;
   padding: 0.6rem 3rem;
   margin-top: 30px;
   font-size: 13px;
   color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #497142;
+  opacity: 0.9;
 }
 
 .hero-content h1 {
@@ -102,16 +115,15 @@ button:hover {
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .about-content {
   display: flex;
   justify-content: space-between;
   background-color: #3a6150;
-  margin: 80px 20px 80px 20px;
+  margin: 100px 10px;
   padding: 40px;
-  /* width: 50%; */
 }
 
 .about-content img {
@@ -119,8 +131,7 @@ button:hover {
 }
 
 .about-content h3,
-p,
-a {
+p {
   color: #fff;
 }
 
@@ -130,21 +141,61 @@ a {
 
 /* Contact Us*/
 
-/* .contact-image {
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: #71837b;
   position: relative;
-  height: 300px;
-  width: 100%;
-} */
+  padding: 60px;
+}
 
-/* .image-container {
-  text-align: left;
+.contact h1,
+p {
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-} */
+  padding: 80px 50px;
+  color: #000;
+}
 
-.rounded-checkbox {
+.contact strong {
+  font-size: 40px;
+}
+
+.contact p .fb-icon-vertic {
+  vertical-align: middle;
+  padding-top: 5rem;
+}
+
+.contact p .fb-icon-horizon {
+  padding-top: 10rem;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+form input[type="text"] {
+  width: 50%;
+  padding: 8px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-color: #3a6150;
+  border-radius: 4px;
+}
+
+form input[placeholder="Text here..."] {
+  width: 100%;
+  padding: 10px 0 60px 5px;
+  margin: 10px 0 30px 0;
+}
+
+form ::placeholder {
+  color: grey;
+}
+
+.contact form .checkbox {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -155,10 +206,9 @@ a {
   outline: none;
   cursor: pointer;
 }
-.rounded-checkbox:checked {
-  appearance: auto;
-  clip-path: circle(50% at 50% 50%);
-  background-color: lightgray;
+
+.contact form button {
+  margin: 0 0 0 500px;
 }
 
 /* Footer */
