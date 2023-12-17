@@ -7,6 +7,7 @@
 body {
   margin: 0 20rem 0 20rem;
   font-family: "Rubik", sans-serif;
+  background-color: #e5e5e5;
 }
 
 a {
@@ -21,6 +22,7 @@ img {
 .navbar {
   align-items: center;
   padding: 20px;
+  background-color: #fff;
 }
 
 .navbar .container {
@@ -82,9 +84,9 @@ img {
 button {
   display: inline-block;
   background-color: #3a6150;
-  padding: 0.6rem 3rem;
+  padding: 0.7rem 3rem;
   margin-top: 30px;
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
@@ -116,6 +118,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .about-content {
@@ -212,3 +215,31 @@ form ::placeholder {
 }
 
 /* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  background-color: #f9f9f9;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer input[type="text"] {
+  width: 60%;
+  padding: 12px 5px;
+  margin-right: 15px;
+  font-size: 15px;
+  border-color: #3a6150;
+}
+
+footer input:focus {
+  border: transparent;
+}
+
+footer h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
