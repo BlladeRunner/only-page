@@ -168,13 +168,26 @@ button:hover {
 
 .contact h1,
 .contact p {
-    position: absolute;
     padding: 80px 50px;
     color: #000;
 }
 
 .contact strong {
     font-size: 40px;
+}
+
+.contact .container {
+    display: flex;
+
+    background-color: white;
+}
+
+.contact .container .image {
+    background-image: url("img/Rectangle 573.svg");
+    height: 637px;
+    border-bottom: 10px solid #3a6150;
+    width: 425px;
+    background-position: bottom;
 }
 
 form {
