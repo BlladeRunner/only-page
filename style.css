@@ -5,16 +5,13 @@
 }
 
 body {
-  margin: 0 20rem 0 20rem;
+  /* margin: 0 20rem 0 20rem; */
   font-family: "Afacad", sans-serif;
   background-color: #e5e5e5;
 }
 
 a {
   color: #fff;
-}
-img {
-  max-width: 100%;
 }
 
 /* Navbar */
@@ -156,9 +153,6 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.about-content2 a {
-}
-
 /* Contact Us*/
 
 .contact {
@@ -169,8 +163,7 @@ button:hover {
   padding: 60px;
 }
 
-.contact h1,
-p {
+.contact .image span {
   position: absolute;
   padding: 80px 50px;
   color: #000;
@@ -178,7 +171,27 @@ p {
 
 .contact strong {
   font-size: 40px;
+  padding: 0 0 20px 0;
 }
+
+.contact .image p {
+  margin-top: 20px;
+}
+
+.contact .image .fb-icon-vertic {
+  padding: 0;
+  margin: 50px 0;
+}
+
+.contact .image .fb-icon-horizon {
+  padding: 350px 0;
+}
+
+.contact .fb-icon-vertic .fb-icon-horizon img {
+  padding: 100px 0;
+}
+
+/* Contact form section */
 
 form {
   display: inline-block;
@@ -197,9 +210,13 @@ form input[type="text"] {
   border-radius: 4px;
 }
 
+form input[type="checkbox"] {
+  accent-color: #3a6150;
+}
+
 form input[placeholder="Text here..."] {
-  width: 100%;
-  padding: 10px 0 60px 5px;
+  width: 98%;
+  padding: 10px 0 90px 5px;
   margin: 10px 8px 30px;
 }
 
@@ -223,22 +240,39 @@ form .left {
   font-weight: bold;
 }
 
+.contact form .left input {
+  margin: 5px 0 0 0;
+}
+
+.contact form .right input {
+  margin: 5px 0 0 0;
+}
+
 .contact form .checkboxes input[type="radio"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 2px solid black;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   cursor: pointer;
-  margin: 0 10px;
+  margin: 20px 10px 40px 10px;
+  accent-color: #3a6150;
 }
 
-.contact form label[for="msg"] {
-  margin: 200px 0 0 0;
+.contact form .checkboxes2 label[for="msg"] {
+  margin: 20px 10px;
+}
+
+.contact form .checkboxes2 input[type="checkbox"] {
+  margin: 0 20px;
+}
+
+form label .left {
+  margin-bottom: 5px;
 }
 
 .contact form button {
-  margin: 0 0 0 500px;
+  margin: 90px 0 0 500px;
 }
 
 /* Footer */
