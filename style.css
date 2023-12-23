@@ -158,7 +158,6 @@ button:hover {
 
 .contact h1,
 .contact p {
-  position: absolute;
   padding: 80px 50px;
   color: #000;
 }
@@ -167,24 +166,19 @@ button:hover {
   font-size: 40px;
 }
 
-.contact .image p {
-  margin-top: 20px;
+.contact .container {
+  display: flex;
+
+  background-color: white;
 }
 
-.contact .image .fb-icon-vertic {
-  padding: 0;
-  margin: 50px 0;
+.contact .container .image {
+  background-image: url("img/Rectangle 573.svg");
+  height: 637px;
+  border-bottom: 10px solid #3a6150;
+  width: 425px;
+  background-position: bottom;
 }
-
-.contact .image .fb-icon-horizon {
-  padding: 350px 0;
-}
-
-.contact .fb-icon-vertic .fb-icon-horizon img {
-  padding: 100px 0;
-}
-
-/* Contact form section */
 
 form {
   display: inline-block;
