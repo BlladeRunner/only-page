@@ -48,6 +48,15 @@ body {
   display: block;
 }
 
+.navbar ul li::after {
+  content: "|";
+  margin: 0 0 0 15px;
+}
+
+.navbar ul li:last-child::after {
+  content: "\25bc";
+}
+
 .container input {
   padding: 0.7rem 8rem 0.7rem 0.5rem;
   font-size: 14px;
