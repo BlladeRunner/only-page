@@ -140,7 +140,7 @@ button:hover {
 }
 
 .about-text a {
-  display: block;
+  color: #fff;
 }
 
 .about-text a::after {
@@ -150,46 +150,54 @@ button:hover {
 
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #71837b;
-  position: relative;
-  padding: 60px;
+  padding: 64px 0;
+}
+
+.contact h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 0;
 }
 
 .contact h1,
 .contact p {
-  padding: 80px 50px;
   color: #000;
-}
-
-.contact strong {
-  font-size: 40px;
 }
 
 .contact .container {
   display: flex;
-
   background-color: white;
+  border-radius: 10px;
+  width: 1312px;
 }
 
-.contact .container .image {
-  background-image: url("img/Rectangle 573.svg");
-  height: 637px;
-  border-bottom: 10px solid #3a6150;
-  width: 425px;
-  background-position: bottom;
-}
-
-form {
+.contact .contact-form {
   display: inline-block;
   background-color: #fff;
   padding: 30px 10px;
   border-radius: 10px;
-  flex: 1;
 }
 
-form input[type="text"] {
-  width: 339px;
+.contact .container .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("img/Rectangle 573.svg");
+  height: 637px;
+  border-bottom: 10px solid #3a6150;
+  width: 425px;
+  border-radius: 10px;
+}
+
+.contact .container .image h1,
+.contact .container .image p {
+  margin: 42px;
+}
+
+.contact-form input[type="text"] {
+  width: 416px;
   padding: 8px 5px;
   font-size: 12px;
   font-weight: bold;
@@ -197,17 +205,17 @@ form input[type="text"] {
   border-radius: 4px;
 }
 
-form input[type="checkbox"] {
+.contact-form input[type="checkbox"] {
   accent-color: #3a6150;
 }
 
-form input[placeholder="Text here..."] {
-  width: 100%;
+.contact-form input[placeholder="Text here..."] {
+  width: 850px;
   padding: 10px 0 60px 5px;
   margin: 10px 8px 30px;
 }
 
-form ::placeholder {
+.contact-form::placeholder {
   color: grey;
 }
 
@@ -217,25 +225,25 @@ form ::placeholder {
   margin-right: 2px;
 }
 
-form .left {
+.contact-form .left {
   float: left;
   padding: 0 10px;
 }
 
-.contact form .checkboxes {
+.contact-form .checkboxes {
   font-size: 13px;
   font-weight: bold;
 }
 
-.contact form .left input {
+.contact-form .left input {
   margin: 5px 0 0 0;
 }
 
-.contact form .right input {
+.contact-form .right input {
   margin: 5px 0 0 0;
 }
 
-.contact form .checkboxes input[type="radio"] {
+.contact-form .checkboxes input[type="radio"] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -244,12 +252,12 @@ form .left {
   margin: 0 10px;
 }
 
-.contact form label[for="msg"] {
+.contact-form label[for="msg"] {
   margin: 200px 0 0 0;
 }
 
-.contact form button {
-  margin: 0 0 0 500px;
+.contact-form button {
+  margin: 0 0 0 0;
 }
 
 /* Footer */
