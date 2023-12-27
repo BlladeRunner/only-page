@@ -44,7 +44,7 @@
       </nav>
 
       <!-- Hero section   -->
-      <div class="hero">
+      <section class="hero">
         <div class="hero-content">
           <h1>Lorem ipsum dolor sit amet</h1>
           <h3>Lorem ipsum dolor sit amet</h3>
@@ -64,10 +64,10 @@
           width="500"
           height="550"
         />
-      </div>
+      </section>
 
       <!-- ABOUT us section -->
-      <div class="about">
+      <section class="about">
         <div class="about-container">
           <div class="about-img">
             <img src="img/Rectangle 570.svg" alt="SVG Image" />
@@ -102,10 +102,10 @@
             <a href="">Learn more about</a>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- CONTACT -->
-      <div class="contact">
+      <section class="contact">
         <div class="container">
           <div class="image">
             <h1>Contact Us</h1>
@@ -114,12 +114,20 @@
               hours. Happy to see your message!
             </p>
             <p class="fb-icon-vertic">
-              <img src="img/bi_facebook.svg" alt="SVG Image" />
-              +380 93 15 32 456<br />
-              <img src="img/bi_facebook.svg" alt="SVG Image" />
-              example@gmail.com<br />
-              <img src="img/bi_facebook.svg" alt="SVG Image" />
-              Pidmurma 5a, Lviv
+              <img src="img/bi_facebook.svg" alt="SVG Image" /><span
+                class="fb-icon-text"
+                >+380 93 15 32 456</span
+              >
+              <img src="img/bi_facebook.svg" alt="SVG Image" /><span
+                class="fb-icon-text"
+              >
+                example@gmail.com</span
+              >
+              <img src="img/bi_facebook.svg" alt="SVG Image" /><span
+                class="fb-icon-text"
+              >
+                Pidmurma 5a, Lviv</span
+              >
             </p>
             <p class="fb-icon-horizon">
               <img src="img/bi_facebook.svg" alt="SVG Image" />
@@ -129,59 +137,62 @@
           </div>
           <div>
             <form class="contact-form">
-              <div class="left">
-                <label for="fname"
-                  ><span class="required-field"></span>First Name</label
-                >
-                <input type="text" placeholder="" />
-                <div class="input-block">
+              <div class="contact-form-upper">
+                <div class="left">
+                  <label for="fname"
+                    ><span class="required-field"></span>First Name</label
+                  >
+                  <input type="text" placeholder="" />
+
                   <label for="email">Email</label>
                   <input type="text" placeholder="example@gmail.com" />
                 </div>
-              </div>
-              <div class="right">
-                <label for="lname"
-                  ><span class="required-field"></span>Last Name</label
-                ><br />
-                <input type="text" placeholder="Doe" /><br /><br />
-                <label for="fnum">Phone Number</label><br />
-                <input
-                  type="text"
-                  placeholder="+380 &#11206;  |  00 000 00 00"
-                /><br /><br />
+                <div class="right">
+                  <label for="lname"
+                    ><span class="required-field"></span>Last Name</label
+                  >
+                  <input type="text" placeholder="Doe" />
+                  <label for="fnum">Phone Number</label>
+                  <input
+                    type="text"
+                    placeholder="+380 &#11206;  |  00 000 00 00"
+                  />
+                </div>
               </div>
               <!-- Checkboxes -->
-              <span class="checkboxes">
-                <input
-                  type="radio"
-                  class="checkbox"
-                  value="UI Developer"
-                  checked
-                />
-                UI Developer
-                <input type="radio" class="checkbox" value="UI/UX Designer" />
-                UI/UX Designer
-                <input
-                  type="radio"
-                  class="checkbox"
-                  value="Accessibility
+              <div class="contact-form-lower">
+                <div class="checkboxes">
+                  <input
+                    type="radio"
+                    class="checkbox"
+                    value="UI Developer"
+                    checked
+                  />
+                  UI Developer
+                  <input type="radio" class="checkbox" value="UI/UX Designer" />
+                  UI/UX Designer
+                  <input
+                    type="radio"
+                    class="checkbox"
+                    value="Accessibility
           Expert"
-                />
-                Accessibility Expert
-                <input type="radio" class="checkbox" value="QA Engineer" />
-                QA Engineer
-                <input type="radio" class="checkbox" value="Other" />
-                Other<br />
-              </span>
-              <label for="msg">Message</label><br />
-              <input type="text" placeholder="Text here..." /><br />
-              <input type="checkbox" value="" /> Accept the Terms
-              <input type="checkbox" value="" checked /> Accept the Terms 2<br />
-              <button>Send Message</button>
+                  />
+                  Accessibility Expert
+                  <input type="radio" class="checkbox" value="QA Engineer" />
+                  QA Engineer
+                  <input type="radio" class="checkbox" value="Other" />
+                  Other
+                </div>
+                <label for="msg">Message</label><br />
+                <input type="text" placeholder="Text here..." />
+                <input type="checkbox" value="" /> Accept the Terms
+                <input type="checkbox" value="" checked /> Accept the Terms 2
+                <button>Send Message</button>
+              </div>
             </form>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Footer -->
       <footer>
