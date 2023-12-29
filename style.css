@@ -256,7 +256,8 @@ button:hover {
 }
 
 .contact-form .contact-form-upper .right input[type="tel"] {
-  content: "|";
+  width: 416px;
+  border-radius: 4px;
 }
 
 .contact-form::placeholder {
