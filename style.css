@@ -255,6 +255,10 @@ button:hover {
   accent-color: #3a6150;
 }
 
+.contact-form .contact-form-upper .right input[type="tel"] {
+  content: "|";
+}
+
 .contact-form::placeholder {
   color: grey;
 }
@@ -309,8 +313,19 @@ button:hover {
   margin: 10px 8px 30px;
 }
 
-.contact-form .contact-form-lower button {
-  width: 200px;
+.contact-form .contact-form-lower .contact-form-lower-dw {
+  margin: 0 20px 0 15px;
+}
+
+.contact-form .contact-form-lower .contact-form-lower-dw label {
+  margin: 0 48px 0 15px;
+}
+
+.contact-form .contact-form-lower .contact-form-lower-dw button {
+  width: fit-content;
+  position: absolute;
+  margin: 120px 0 0 232px;
+  border-radius: 3px;
 }
 
 /* Footer */
@@ -331,7 +346,7 @@ footer ul {
 }
 
 footer ul li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 footer input[type="text"] {
@@ -353,12 +368,18 @@ footer strong {
   font-size: 40px;
 }
 
+footer .footer .footer-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 244px;
+}
+
 footer .bottom-footer {
   background-color: #f9f9f9;
   padding: 10px 30px;
 }
 
-footer .footer ul li cite {
+footer .footer ul li a {
   text-decoration: underline;
 }
 

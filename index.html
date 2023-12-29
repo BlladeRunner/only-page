@@ -154,8 +154,8 @@
                   <input type="text" placeholder="Doe" />
                   <label for="fnum">Phone Number</label>
                   <input
-                    type="text"
-                    placeholder="+380 &#11206;  |  00 000 00 00"
+                    type="tel"
+                    placeholder="+380 &#11206; |  00 000 00 00"
                   />
                 </div>
               </div>
@@ -167,27 +167,32 @@
                     class="checkbox"
                     value="UI Developer"
                     checked
-                  />
-                  UI Developer
+                  /><label for="">UI Developer</label>
                   <input type="radio" class="checkbox" value="UI/UX Designer" />
-                  UI/UX Designer
+                  <label for="">UI/UX Designer</label>
                   <input
                     type="radio"
                     class="checkbox"
                     value="Accessibility
           Expert"
                   />
-                  Accessibility Expert
+                  <label for="">Accessibility Expert</label>
                   <input type="radio" class="checkbox" value="QA Engineer" />
-                  QA Engineer
+                  <label for="">QA Engineer</label>
                   <input type="radio" class="checkbox" value="Other" />
-                  Other
+                  <label for="">Other</label>
                 </div>
-                <label for="msg">Message</label><br />
+                <label for="msg">Message</label>
                 <input type="text" placeholder="Text here..." />
-                <input type="checkbox" value="" /> Accept the Terms
-                <input type="checkbox" value="" checked /> Accept the Terms 2
-                <button>Send Message</button>
+                <div class="contact-form-lower-dw">
+                  <input type="checkbox" value="" /><label for=""
+                    >Accept the Terms</label
+                  >
+                  <input type="checkbox" value="" checked /><label for=""
+                    >Accept the Terms 2</label
+                  >
+                  <button>Send Message</button>
+                </div>
               </div>
             </form>
           </div>
@@ -205,19 +210,21 @@
             <input type="text" placeholder="example@gmail.com" />
             <button>Subscribe</button>
           </div>
-          <ul>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Block</li>
-            <li>Site Map</li>
-          </ul>
-          <ul>
-            <li>Contact</li>
-            <li>+38 063 072 0121</li>
-            <li><cite>plantme.store@gmail.com</cite></li>
-            <img src="img/image 46.svg" alt="SVG Image" />
-            <img src="img/image 47.svg" alt="SVG Image" />
-          </ul>
+          <div class="footer-right">
+            <ul>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Block</li>
+              <li>Site Map</li>
+            </ul>
+            <ul>
+              <li>Contact</li>
+              <li>+38 063 072 0121</li>
+              <li><a href="email.com">plantme.store@gmail.com</a></li>
+              <img src="img/image 46.svg" alt="SVG Image" />
+              <img src="img/image 47.svg" alt="SVG Image" />
+            </ul>
+          </div>
         </div>
         <hr />
         <div class="bottom-footer">
