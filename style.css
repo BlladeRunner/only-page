@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Afacad", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -39,25 +39,76 @@ body {
 .navbar ul {
   display: flex;
   padding-right: 5rem;
-  font-weight: 600;
 }
 
 .navbar ul li {
   padding: 0 1rem 0 1rem;
   list-style: none;
   display: block;
+  border-right: 1px #000 solid;
 }
 
-.navbar ul li::after {
-  content: "|";
-  margin: 0 0 0 15px;
+.navbar ul li:last-child {
+  border-right: 0;
 }
 
 .navbar ul li:last-child::after {
-  content: "\25bc";
+  font-family: FontAwesome;
+  content: "\f107";
+  padding-left: 4px;
 }
 
-.container input {
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar ul li a:hover {
+  color: #3a6150;
+}
+
+.navbar ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+  background: white;
+}
+
+.navbar ul li:hover > ul,
+.navbar ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 50px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.navbar ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+.navbar ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3a6150;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li ul li a {
+  transition: all 0.8s ease;
+}
+
+.navbar ul li ul li:last-child::after {
+  content: "";
+}
+
+.wrapper .navbar .container input {
   padding: 0.7rem 8rem 0.7rem 0.5rem;
   font-size: 14px;
   font-weight: bold;
@@ -114,8 +165,8 @@ button:hover {
   color: #3a6150;
 }
 
-.hero-content h5 {
-  margin-right: 180px;
+.hero-content p {
+  margin-right: 111px;
 }
 
 /* About us */
@@ -153,7 +204,8 @@ button:hover {
 }
 
 .about-text a::after {
-  content: "→";
+  content: " →";
+  text-decoration: none;
 }
 /* Contact Us*/
 
@@ -166,13 +218,7 @@ button:hover {
 
 .contact h1 {
   font-size: 40px;
-  font-weight: 700;
   padding-bottom: 0;
-}
-
-.contact h1,
-.contact p {
-  color: #000;
 }
 
 .contact .container {
@@ -189,44 +235,47 @@ button:hover {
   border-radius: 10px;
 }
 
-.contact .container .image {
+.contact .container .container-image {
   display: flex;
   flex-direction: column;
   background-image: url("img/Rectangle 573.svg");
   height: 637px;
-  border-bottom: 8px solid #3a6150;
   width: 425px;
   border-radius: 10px;
 }
 
-.contact .container .image h1 {
+.contact .container .container-image h1 {
   margin: 42px 42px 0 42px;
 }
 
-.contact .container .image p {
+.contact .container .container-image p {
   margin: 16px 42px 56px 42px;
-  font-size: 14px;
+  font-size: 15px;
+  vertical-align: bottom;
 }
 
-.contact .container .image .fb-icon-vertic {
+.contact .container .container-image .fb-icon-vertic {
   display: grid;
   grid-template-columns: auto;
   grid-column-start: 1;
   grid-gap: 19px;
 }
 
-.contact .container .image .fb-icon-vertic .fb-icon-text {
-  grid-column-start: 2;
-  margin: 0 240px 0 0;
-  align-items: center;
+.contact .container .container-image .fb-icon-vertic a + .fb-icon-text {
+  vertical-align: sub;
 }
 
-.contact .container .image .fb-icon-horizon img {
+.contact .container .container-image .fb-icon-vertic .fb-icon-text {
+  grid-column-start: 2;
+  margin: 2px 240px 0 0;
+}
+
+.contact .container .container-image .fb-icon-horizon img {
   margin: 0 32px 0 0;
   align-items: end;
 }
 
-.contact .container .image .fb-icon-horizon {
+.contact .container .container-image .fb-icon-horizon {
   margin-top: auto;
 }
 
@@ -249,6 +298,7 @@ button:hover {
   border-color: #3a6150;
   border-radius: 4px;
   margin: 10px 0;
+  padding: 0.7rem 8rem 0.7rem 0.5rem;
 }
 
 .contact-form input[type="checkbox"] {
@@ -256,6 +306,7 @@ button:hover {
 }
 
 .contact-form .contact-form-upper .right input[type="tel"] {
+  padding: 0.7rem 8rem 0.7rem 0.5rem;
   width: 416px;
   border-radius: 4px;
 }
@@ -276,7 +327,6 @@ button:hover {
 
 .contact-form .checkboxes {
   font-size: 13px;
-  font-weight: bold;
 }
 
 .contact-form .contact-form-upper .left input,
@@ -290,18 +340,38 @@ button:hover {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.contact-form .contact-form-lower .checkboxes input[type="radio"] {
-  width: 16px;
-  height: 16px;
-  font-weight: bold;
-  border: 5px solid black;
+.contact-form .contact-form-lower .custom-radio input[type="radio"] {
   cursor: pointer;
   margin: 0 10px 0 20px;
+  accent-color: #3a6150;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  outline: none;
 }
 
-.contact-form .contact-form-lower .checkboxes input[type="radio"] {
-  transform: scale(1.1);
-  accent-color: #3a6150;
+.contact-form .contact-form-lower .radioboxes input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 2.5px;
+  height: 2.5px;
+  margin: 5px 5px;
+}
+
+.contact-form
+  .contact-form-lower
+  .custom-radio
+  input[type="radio"]:checked:before {
+  transform: scale(4);
+  border-radius: 50%;
+  box-shadow: inset 1px 0px 0px 4px #3a6150;
+}
+
+.contact-form .contact-form-lower .radioboxes input,
+.contact-form .contact-form-lower .radioboxes label {
+  vertical-align: text-top;
 }
 
 .contact-form .contact-form-lower label[for="msg"] {
@@ -342,12 +412,14 @@ footer .footer .footer-left {
   width: 50%;
 }
 
-footer ul {
-  list-style: none;
+footer .footer .footer-left .brand-name {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-footer ul li {
-  margin-bottom: 20px;
+footer ul {
+  list-style: none;
 }
 
 footer input[type="text"] {
@@ -375,17 +447,35 @@ footer .footer .footer-right {
   gap: 244px;
 }
 
+footer .footer .footer-right ul li {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+footer .footer .footer-right address {
+  font-style: normal;
+  font-size: 18px;
+}
+
+footer .footer .footer-right address p {
+  margin-bottom: 8px;
+}
+
+footer .footer .footer-right address img {
+  margin-top: 25px;
+}
+
 footer .bottom-footer {
   background-color: #f9f9f9;
   padding: 10px 30px;
 }
 
-footer .footer ul li a {
+footer .footer address a {
   text-decoration: underline;
 }
 
-footer .footer ul img + img {
-  margin-left: 30px;
+footer .footer address img + img {
+  margin-left: 36px;
 }
 
 hr {
@@ -398,9 +488,8 @@ hr {
 footer .bottom-footer ul {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 14px;
   color: #9b9b9b;
-  align-items: end;
   padding-top: 15px;
 }
 
@@ -409,4 +498,12 @@ footer .bottom-footer ul .allrights {
   padding-left: 610px;
   color: #000;
   width: 80%;
+  margin-bottom: 15px;
+}
+
+footer .bottom-footer ul .miscellaneous {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #9b9b9b;
 }
