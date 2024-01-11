@@ -16,6 +16,7 @@
     />
     <title>Creator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,18 +32,23 @@
               <li>
                 <a href="#">Eng</a>
                 <ul class="dropdown">
-                  <li><a href="#">Illustration</a></li>
-                  <li><a href="#">Iconography</a></li>
+                  <li><a href="#">DE</a></li>
+                  <li><a href="#">PL</a></li>
                 </ul>
               </li>
             </ul>
           </div>
-          <input
-            class="search"
-            type="search"
-            value
-            placeholder="Search this site"
-          />
+          <div class="search-container">
+            <form>
+              <input
+                class="search"
+                type="text"
+                placeholder="Search this site"
+                style="color: #3a6150"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
         </div>
       </nav>
 
@@ -116,34 +122,34 @@
               Fill up the form and our Team will get back to you within 24
               hours. Happy to see your message!
             </p>
-            <p class="fb-icon-vertic">
-              <a><img src="img/bi_facebook.svg" alt="Facebook icon" /></a>
+            <address class="fb-icon-vertic">
+              <img src="img/bi_facebook.svg" alt="Facebook icon" />
               <span class="fb-icon-text">+380 93 15 32 456</span>
-              <a><img src="img/bi_facebook.svg" alt="Facebook icon" /></a
-              ><span class="fb-icon-text"> example@gmail.com</span>
-              <a><img src="img/bi_facebook.svg" alt="Facebook icon" /></a
-              ><span class="fb-icon-text"> Pidmurma 5a, Lviv</span>
-            </p>
-            <p class="fb-icon-horizon">
-              <a
+              <img src="img/bi_facebook.svg" alt="Facebook icon" />
+              <span class="fb-icon-text"> example@gmail.com</span>
+              <img src="img/bi_facebook.svg" alt="Facebook icon" />
+              <span class="fb-icon-text"> Pidmurma 5a, Lviv</span>
+            </address>
+            <div class="fb-icon-horizon">
+              <a href="#"
                 ><img
                   src="img/bi_facebook.svg"
                   alt="Facebook icon"
                   width="33px"
               /></a>
-              <a
+              <a href="#"
                 ><img
                   src="img/bi_facebook.svg"
                   alt="Facebook icon"
                   width="33px"
               /></a>
-              <a
+              <a href="#"
                 ><img
                   src="img/bi_facebook.svg"
                   alt="Facebook icon"
                   width="33px"
               /></a>
-            </p>
+            </div>
           </div>
           <div>
             <form class="contact-form">
@@ -158,15 +164,37 @@
                   <input type="text" placeholder="example@gmail.com" />
                 </div>
                 <div class="right">
-                  <label for="lname"
+                  <label for="lastname"
                     ><span class="required-field"></span>Last Name</label
                   >
-                  <input type="text" placeholder="Doe" />
-                  <label for="fnum">Phone Number</label>
-                  <input
-                    type="tel"
-                    placeholder="+380 &#11206; |  00 000 00 00"
-                  />
+                  <input type="text" id="lastname" placeholder="Doe" />
+                  <div>
+                    <label for="phonenum">Phone Number</label>
+                    <div>
+                      <span class="iconify" data-icon="flag:pl-4x3"></span>
+                      <span>+48</span>
+                    </div>
+                    <input type="tel" id="phonenum" placeholder="Phone num" />
+                    <div class="options">
+                      <input
+                        type="text"
+                        class="searchbox"
+                        placeholder="Search Country name"
+                      />
+                      <ol>
+                        <li class="option">
+                          <div>
+                            <span
+                              class="iconify"
+                              data-icon="flag:ua-4x3"
+                            ></span>
+                            <span class="country-name">Ukraine</span>
+                            <span>+380</span>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- Radioboxes -->
@@ -258,11 +286,11 @@
         <div class="bottom-footer">
           <ul>
             <li class="allrights">&#169; 2022 PlantMe. All Rights Reserved</li>
-            <div class="miscellaneous">
+            <ul class="miscellaneous">
               <li>Privacy Policy</li>
               <li>Terms of ser🇻🇨ice</li>
               <li>Language</li>
-            </div>
+            </ul>
           </ul>
         </div>
       </footer>

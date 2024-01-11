@@ -14,6 +14,7 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
+
 /* Navbar */
 
 .navbar {
@@ -80,8 +81,9 @@ body {
   visibility: visible;
   opacity: 1;
   display: block;
-  min-width: 50px;
-  text-align: left;
+  max-width: 15px;
+  text-align: center;
+  margin-left: 30px;
   padding-top: 20px;
   box-shadow: 0px 3px 5px -1px #ccc;
 }
@@ -108,21 +110,31 @@ body {
   content: "";
 }
 
-.wrapper .navbar .container input {
-  padding: 0.7rem 8rem 0.7rem 0.5rem;
-  font-size: 14px;
-  font-weight: bold;
-  border-color: #3a6150;
+.navbar .search-container {
+  float: right;
 }
 
-::placeholder {
+.navbar .search-container input {
+  width: 376px;
+  height: 48px;
+  font-size: 18px;
+  border-color: #3a6150;
+  font-family: "Outfit", sans-serif;
+  padding-left: 16px;
+}
+
+.navbar .search-container input::placeholder {
   color: #3a6150;
 }
 
-.search {
-  background-image: url("img/Search Button.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+.navbar .search-container button {
+  float: right;
+  padding: 14px 14px;
+  margin-top: 0;
+  background: #3a6150;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Hero  */
@@ -207,6 +219,7 @@ button:hover {
   content: " →";
   text-decoration: none;
 }
+
 /* Contact Us*/
 
 .contact {
@@ -240,7 +253,7 @@ button:hover {
   flex-direction: column;
   background-image: url("img/Rectangle 573.svg");
   height: 637px;
-  width: 425px;
+  min-width: 425px;
   border-radius: 10px;
 }
 
@@ -257,26 +270,20 @@ button:hover {
 .contact .container .container-image .fb-icon-vertic {
   display: grid;
   grid-template-columns: auto;
-  grid-column-start: 1;
+  justify-content: start;
   grid-gap: 19px;
-}
-
-.contact .container .container-image .fb-icon-vertic a + .fb-icon-text {
-  vertical-align: sub;
+  margin: 0 0 0 42px;
+  padding: 0;
 }
 
 .contact .container .container-image .fb-icon-vertic .fb-icon-text {
   grid-column-start: 2;
-  margin: 2px 240px 0 0;
-}
-
-.contact .container .container-image .fb-icon-horizon img {
-  margin: 0 32px 0 0;
-  align-items: end;
 }
 
 .contact .container .container-image .fb-icon-horizon {
-  margin-top: auto;
+  display: flex;
+  gap: 36px;
+  margin: 233px 0 0 42px;
 }
 
 /* CONTACT US */
@@ -495,15 +502,16 @@ footer .bottom-footer ul {
 
 footer .bottom-footer ul .allrights {
   align-items: center;
-  padding-left: 610px;
+  padding-left: 580px;
   color: #000;
   width: 80%;
   margin-bottom: 15px;
 }
 
-footer .bottom-footer ul .miscellaneous {
+footer .bottom-footer ul li ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+
   font-size: 14px;
   color: #9b9b9b;
 }
