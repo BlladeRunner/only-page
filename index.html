@@ -14,14 +14,18 @@
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Creator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <nav class="navbar">
-        <div class="container">
+      <header class="navbar">
+        <nav class="container">
           <div class="nav-links">
             <a href="#" class="logo"><img src="img/Logo.svg" alt="Logo" /></a>
             <ul>
@@ -49,40 +53,15 @@
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
-      <!-- Hero section   -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
-            tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
-            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
-            hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis,
-            ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit.
-          </p>
-          <button>Buy Now</button>
-        </div>
-        <img
-          src="img/unsplash_W5XTTLpk1-I.svg"
-          alt="SVG Image"
-          width="500"
-          height="550"
-        />
-      </section>
-
-      <!-- ABOUT us section -->
-      <section class="about">
-        <div class="about-container">
-          <div class="about-img">
-            <img src="img/Rectangle 570.svg" alt="About Product image" />
-          </div>
-          <div class="about-text">
-            <h3>About Us</h3>
+      <main>
+        <!-- Hero section   -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <h3>Lorem ipsum dolor sit amet</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
               tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -91,161 +70,183 @@
               sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <a href="">Learn more about</a>
+            <button>Buy Now</button>
           </div>
-        </div>
-        <div class="about-container">
-          <div class="about-img">
-            <img src="img/Rectangle 570.svg" alt="About Product image" />
-          </div>
-          <div class="about-text">
-            <h3>About Us 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
-              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
-              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
-              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
-              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <a href="">Learn more about</a>
-          </div>
-        </div>
-      </section>
+          <img
+            src="img/unsplash_W5XTTLpk1-I.svg"
+            alt="SVG Image"
+            width="500"
+            height="550"
+          />
+        </section>
 
-      <!-- CONTACT -->
-      <section class="contact">
-        <div class="container">
-          <div class="container-image">
-            <h1>Contact Us</h1>
-            <p>
-              Fill up the form and our Team will get back to you within 24
-              hours. Happy to see your message!
-            </p>
-            <address class="fb-icon-vertic">
-              <img src="img/bi_facebook.svg" alt="Facebook icon" />
-              <span class="fb-icon-text">+380 93 15 32 456</span>
-              <img src="img/bi_facebook.svg" alt="Facebook icon" />
-              <span class="fb-icon-text"> example@gmail.com</span>
-              <img src="img/bi_facebook.svg" alt="Facebook icon" />
-              <span class="fb-icon-text"> Pidmurma 5a, Lviv</span>
-            </address>
-            <div class="fb-icon-horizon">
-              <a href="#"
-                ><img
-                  src="img/bi_facebook.svg"
-                  alt="Facebook icon"
-                  width="33px"
-              /></a>
-              <a href="#"
-                ><img
-                  src="img/bi_facebook.svg"
-                  alt="Facebook icon"
-                  width="33px"
-              /></a>
-              <a href="#"
-                ><img
-                  src="img/bi_facebook.svg"
-                  alt="Facebook icon"
-                  width="33px"
-              /></a>
+        <!-- ABOUT us section -->
+        <section class="about">
+          <div class="about-container">
+            <div class="about-img">
+              <img src="img/Rectangle 570.svg" alt="About Product image" />
+            </div>
+            <div class="about-text">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
+                tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+                tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="">Learn more about</a>
             </div>
           </div>
-          <div>
-            <form class="contact-form">
-              <div class="contact-form-upper">
-                <div class="left">
-                  <label for="fname"
-                    ><span class="required-field"></span>First Name</label
-                  >
-                  <input type="text" />
+          <div class="about-container">
+            <div class="about-img">
+              <img src="img/Rectangle 570.svg" alt="About Product image" />
+            </div>
+            <div class="about-text">
+              <h3>About Us 2</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Eleifend
+                tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+                tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+                Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <a href="">Learn more about</a>
+            </div>
+          </div>
+        </section>
 
-                  <label for="email">Email</label>
-                  <input type="text" placeholder="example@gmail.com" />
-                </div>
-                <div class="right">
-                  <label for="lastname"
-                    ><span class="required-field"></span>Last Name</label
-                  >
-                  <input type="text" id="lastname" placeholder="Doe" />
-                  <div>
-                    <label for="phonenum">Phone Number</label>
-                    <div>
-                      <span class="iconify" data-icon="flag:pl-4x3"></span>
-                      <span>+48</span>
-                    </div>
-                    <input type="tel" id="phonenum" placeholder="Phone num" />
-                    <div class="options">
-                      <input
-                        type="text"
-                        class="searchbox"
-                        placeholder="Search Country name"
-                      />
-                      <ol>
-                        <li class="option">
-                          <div>
-                            <span
-                              class="iconify"
-                              data-icon="flag:ua-4x3"
-                            ></span>
-                            <span class="country-name">Ukraine</span>
-                            <span>+380</span>
-                          </div>
-                        </li>
-                      </ol>
+        <!-- CONTACT -->
+        <section class="contact">
+          <div class="container">
+            <div class="container-image">
+              <h1>Contact Us</h1>
+              <p>
+                Fill up the form and our Team will get back to you within 24
+                hours. Happy to see your message!
+              </p>
+              <address class="fb-icon-vertic">
+                <img src="img/bi_facebook.svg" alt="Facebook icon" />
+                <span class="fb-icon-text">+380 93 15 32 456</span>
+                <img src="img/bi_facebook.svg" alt="Facebook icon" />
+                <span class="fb-icon-text"> example@gmail.com</span>
+                <img src="img/bi_facebook.svg" alt="Facebook icon" />
+                <span class="fb-icon-text"> Pidmurma 5a, Lviv</span>
+              </address>
+              <div class="fb-icon-horizon">
+                <a href="#"
+                  ><img
+                    src="img/bi_facebook.svg"
+                    alt="Facebook icon"
+                    width="33px"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="img/bi_facebook.svg"
+                    alt="Facebook icon"
+                    width="33px"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="img/bi_facebook.svg"
+                    alt="Facebook icon"
+                    width="33px"
+                /></a>
+              </div>
+            </div>
+            <div>
+              <form class="contact-form">
+                <div class="contact-form-upper">
+                  <div class="left">
+                    <label for="fname"
+                      ><span class="required-field"></span>First Name</label
+                    >
+                    <input type="text" />
+
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="example@gmail.com" />
+                  </div>
+                  <div class="right">
+                    <label for="lastname">
+                      <span class="required-field"></span>Last Name</label
+                    >
+                    <input type="text" id="lastname" placeholder="Doe" />
+                    <label for="phone">Phone Number</label>
+                    <div class="phonenum">
+                      <input type="tel" id="phone" name="phone" />
+                      <script>
+                        const phoneInputField =
+                          document.querySelector("#phone");
+                        const phoneInput = window.intlTelInput(
+                          phoneInputField,
+                          {
+                            utilsScript:
+                              "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+                          }
+                        );
+                      </script>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Radioboxes -->
-              <div class="contact-form-lower">
-                <div class="radioboxes">
-                  <label for="developer" class="custom-radio"
-                    ><input
-                      type="radio"
-                      id="developer"
-                      value="UI Developer"
-                      checked
-                    />UI Developer</label
-                  >
-                  <label for="designer" class="custom-radio"
-                    ><input
-                      type="radio"
-                      id="designer"
-                      value="UI/UX Designer"
-                    />UI/UX Designer</label
-                  >
-                  <label for="expert" class="custom-radio"
-                    ><input
-                      type="radio"
-                      id="expert"
-                      value="Accessibility Expert"
-                    />Accessibility Expert</label
-                  >
-                  <label for="engineer" class="custom-radio"
-                    ><input type="radio" id="engineer" value="QA Engineer" />QA
-                    Engineer</label
-                  >
-                  <label for="other" class="custom-radio"
-                    ><input type="radio" id="other" value="Other" />Other</label
-                  >
+                <!-- Radioboxes -->
+                <div class="contact-form-lower">
+                  <div class="radioboxes">
+                    <label for="developer" class="custom-radio"
+                      ><input
+                        type="radio"
+                        id="developer"
+                        value="UI Developer"
+                        checked
+                      />UI Developer</label
+                    >
+                    <label for="designer" class="custom-radio"
+                      ><input
+                        type="radio"
+                        id="designer"
+                        value="UI/UX Designer"
+                      />UI/UX Designer</label
+                    >
+                    <label for="expert" class="custom-radio"
+                      ><input
+                        type="radio"
+                        id="expert"
+                        value="Accessibility Expert"
+                      />Accessibility Expert</label
+                    >
+                    <label for="engineer" class="custom-radio"
+                      ><input
+                        type="radio"
+                        id="engineer"
+                        value="QA Engineer"
+                      />QA Engineer</label
+                    >
+                    <label for="other" class="custom-radio"
+                      ><input
+                        type="radio"
+                        id="other"
+                        value="Other"
+                      />Other</label
+                    >
+                  </div>
+                  <label for="msg">Message</label>
+                  <input type="text" id="msg" placeholder="Text here..." />
+                  <div class="contact-form-lower-dw">
+                    <input type="checkbox" value="" /><label for=""
+                      >Accept the Terms</label
+                    >
+                    <input type="checkbox" value="" checked /><label for=""
+                      >Accept the Terms 2</label
+                    >
+                    <button>Send Message</button>
+                  </div>
                 </div>
-                <label for="msg">Message</label>
-                <input type="text" id="msg" placeholder="Text here..." />
-                <div class="contact-form-lower-dw">
-                  <input type="checkbox" value="" /><label for=""
-                    >Accept the Terms</label
-                  >
-                  <input type="checkbox" value="" checked /><label for=""
-                    >Accept the Terms 2</label
-                  >
-                  <button>Send Message</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <!-- Footer -->
       <footer>

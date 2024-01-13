@@ -263,7 +263,7 @@ button:hover {
 
 .contact .container .container-image p {
   margin: 16px 42px 56px 42px;
-  font-size: 15px;
+  font-size: 14px;
   vertical-align: bottom;
 }
 
@@ -273,11 +273,13 @@ button:hover {
   justify-content: start;
   grid-gap: 19px;
   margin: 0 0 0 42px;
-  padding: 0;
+  font-style: normal;
+  font-size: 14px;
 }
 
 .contact .container .container-image .fb-icon-vertic .fb-icon-text {
   grid-column-start: 2;
+  margin-top: 2px;
 }
 
 .contact .container .container-image .fb-icon-horizon {
@@ -313,7 +315,7 @@ button:hover {
 }
 
 .contact-form .contact-form-upper .right input[type="tel"] {
-  padding: 0.7rem 8rem 0.7rem 0.5rem;
+  padding: 0.6rem 8rem 0.7rem 0.5rem;
   width: 416px;
   border-radius: 4px;
 }
@@ -338,6 +340,10 @@ button:hover {
 
 .contact-form .contact-form-upper .left input,
 .contact-form .contact-form-upper .right input {
+  margin: 10px 0 30px 0;
+}
+
+.contact-form .contact-form-upper .right .phonenum {
   margin: 10px 0 30px 0;
 }
 
@@ -492,26 +498,27 @@ hr {
   height: 1px;
 }
 
+footer .bottom-footer {
+  padding: 24px 0;
+}
+
 footer .bottom-footer ul {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   color: #9b9b9b;
-  padding-top: 15px;
 }
 
 footer .bottom-footer ul .allrights {
   align-items: center;
   padding-left: 580px;
   color: #000;
-  width: 80%;
-  margin-bottom: 15px;
+  width: 70%;
 }
 
-footer .bottom-footer ul li ul {
-  display: flex;
-  justify-content: end;
-
+footer .bottom-footer .miscellaneous {
   font-size: 14px;
   color: #9b9b9b;
+  gap: 15px;
+  margin-right: 64px;
 }
