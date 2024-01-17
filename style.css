@@ -525,7 +525,8 @@ body {
 
 .second-footer ul .allrights {
   align-items: center;
-  padding-left: 580px;
+  padding-left: 610px;
+  align-self: center;
   color: #000;
   width: 70%;
 }
