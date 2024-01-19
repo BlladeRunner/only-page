@@ -1,3 +1,4 @@
+/*# sourceMappingURL=style.css.map */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -223,52 +224,52 @@ body {
 
 /* Contact Us*/
 
-.contact {
+.contact-main {
   display: flex;
   justify-content: space-around;
   background-color: #71837b;
   padding: 64px 0;
 }
 
-.contact h1 {
+.contact-main h1 {
   font-size: 40px;
   padding-bottom: 0;
 }
 
-.contact .container {
+.contact-main .contact-container {
   display: flex;
   background-color: white;
   border-radius: 10px;
   width: 1312px;
 }
 
-.contact .contact-form {
+.contact-main .contact-form {
   display: inline-block;
   background-color: #fff;
   padding: 30px 10px;
   border-radius: 10px;
 }
 
-.contact .container .container-image {
+.contact-main .contact-container .container__image-container {
   display: flex;
   flex-direction: column;
-  background-image: url("img/Rectangle 573.svg");
+  background-image: url("../img/Rectangle 573.svg");
   height: 637px;
   min-width: 425px;
   border-radius: 10px;
 }
 
-.contact .container .container-image h1 {
+.contact-main .contact-container .container__image-container h1 {
   margin: 42px 42px 0 42px;
 }
 
-.contact .container .container-image p {
+.contact-main .contact-container .container__image-container p {
   margin: 16px 42px 56px 42px;
   font-size: 14px;
   vertical-align: bottom;
 }
 
-.fb-icon-vertic {
+.address_icon-vertic {
   display: grid;
   grid-template-columns: auto;
   justify-content: start;
@@ -278,12 +279,12 @@ body {
   font-size: 14px;
 }
 
-.fb-icon-vertic .fb-icon-text {
+.address_icon-vertic .fb-icon-text {
   grid-column-start: 2;
   margin-top: 2px;
 }
 
-.fb-icon-horizon {
+.address_icon-horizon {
   display: flex;
   gap: 36px;
   margin: 233px 0 0 42px;
@@ -292,11 +293,11 @@ body {
 /* CONTACT US */
 /* Contact Us right sector / upper */
 
-.contact .contact-form {
+.contact-main .contact-form {
   margin: 10px 0 0 0;
 }
 
-.contact .contact-form .contact-form__upper {
+.contact-main .contact-form .contact-form__upper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -341,30 +342,30 @@ body {
 }
 
 /* Contact Us right sector / lower */
-.contact .contact-form .contact-form-lower {
+.contact-main .contact-form .contact-form-lower {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 
-.contact .contact-form__radioboxes {
+.contact-main .contact-form__radioboxes {
   display: flex;
   cursor: pointer;
   accent-color: #3a6150;
 }
 
-.contact .contact-form__radioboxes input {
+.contact-main .contact-form__radioboxes input {
   width: 20px;
   height: 20px;
   cursor: pointer;
   margin: 0 10px 0 20px;
 }
 
-.contact .contact-form__radioboxes .radio-custom,
-.contact .contact-form__radioboxes .radio-custom-label {
+.contact-main .contact-form__radioboxes .radio-custom,
+.contact-main .contact-form__radioboxes .radio-custom-label {
   vertical-align: middle;
 }
 
-.contact .contact-form__radioboxes .radio-custom-label {
+.contact-main .contact-form__radioboxes .radio-custom-label {
   font-family: "Outfit", sans-serif;
   font-size: 14px;
 }
