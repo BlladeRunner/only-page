@@ -1,9 +1,14 @@
+// colors
 $main-font: "Outfit", sans-serif;
 $primary-color: #e5e5e5;
 $secondary-color: #3a6150;
 $background-color: #f9f9f9;
 $color-white: #fff;
 
+// partials
+@import "buttons";
+
+// code
 *,
 *::after,
 *::before {
@@ -50,32 +55,29 @@ body {
 .navbar ul {
   display: flex;
   padding-right: 5rem;
-}
-
-.navbar ul li {
-  padding: 0 1rem 0 1rem;
-  list-style: none;
-  display: block;
-  border-right: 1px #000 solid;
+  li {
+    padding: 0 1rem 0 1rem;
+    list-style: none;
+    display: block;
+    border-right: 1px #000 solid;
+  }
 }
 
 .navbar ul li:last-child {
   border-right: 0;
-}
-
-.navbar ul li:last-child::after {
-  font-family: FontAwesome;
-  content: "\f107";
-  padding-left: 4px;
+  li:last-child::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    padding-left: 4px;
+  }
 }
 
 .navbar ul li a {
   text-decoration: none;
   color: #000;
-}
-
-.navbar ul li a:hover {
-  color: $secondary-color;
+  li a:hover {
+    color: $secondary-color;
+  }
 }
 
 .navbar ul li ul {
@@ -131,10 +133,9 @@ body {
   border-color: $secondary-color;
   font-family: "Outfit", sans-serif;
   padding-left: 16px;
-}
-
-.navbar .search-container input::placeholder {
-  color: $secondary-color;
+  input::placeholder {
+    color: $secondary-color;
+  }
 }
 
 .navbar .search-container__button {
@@ -145,11 +146,10 @@ body {
   font-size: 17px;
   border: none;
   cursor: pointer;
-}
-
-.navbar .search-container__button .fa-search {
-  color: $color-white;
-  font-size: 18px;
+  .fa-search {
+    color: $color-white;
+    font-size: 18px;
+  }
 }
 
 /* Hero  */
@@ -163,33 +163,23 @@ body {
 
 .hero-content {
   margin-top: 186px;
+  h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: $secondary-color;
+  }
+  h3 {
+    margin-bottom: 10px;
+    color: $secondary-color;
+  }
+  p {
+    margin-right: 111px;
+  }
 }
 
 .hero-button {
-  display: inline-block;
-  background-color: $secondary-color;
-  width: 196px;
-  height: 46px;
+  @include button-size;
   margin-top: 30px;
-  font-size: 14px;
-  color: $color-white;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-.hero-content h1 {
-  font-size: 35px;
-  margin-bottom: 30px;
-  color: $secondary-color;
-}
-
-.hero-content h3 {
-  margin-bottom: 10px;
-  color: $secondary-color;
-}
-
-.hero-content p {
-  margin-right: 111px;
 }
 
 /* About us */
@@ -220,15 +210,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.about-text a {
-  color: $color-white;
-}
-
-.about-text a::after {
-  content: " →";
-  text-decoration: none;
+  a {
+    color: $color-white;
+  }
+  ::after {
+    content: " →";
+    text-decoration: none;
+  }
 }
 
 /* Contact Us*/
@@ -238,11 +226,10 @@ body {
   justify-content: space-around;
   background-color: #71837b;
   padding: 64px 0;
-}
-
-.contact-main h1 {
-  font-size: 40px;
-  padding-bottom: 0;
+  h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
 }
 
 .contact-main .contact-container {
@@ -266,16 +253,14 @@ body {
   height: 637px;
   min-width: 425px;
   border-radius: 10px;
-}
-
-.contact-main .contact-container .container__image-container h1 {
-  margin: 42px 42px 0 42px;
-}
-
-.contact-main .contact-container .container__image-container p {
-  margin: 16px 42px 56px 42px;
-  font-size: 14px;
-  vertical-align: bottom;
+  h1 {
+    margin: 42px 42px 0 42px;
+  }
+  p {
+    margin: 16px 42px 56px 42px;
+    font-size: 14px;
+    vertical-align: bottom;
+  }
 }
 
 .address_icon-vertic {
@@ -286,11 +271,10 @@ body {
   margin: 0 0 0 42px;
   font-style: normal;
   font-size: 14px;
-}
-
-.address_icon-vertic .fb-icon-text {
-  grid-column-start: 2;
-  margin-top: 2px;
+  .fb-icon-text {
+    grid-column-start: 2;
+    margin-top: 2px;
+  }
 }
 
 .address_icon-horizon {
@@ -304,11 +288,10 @@ body {
 
 .contact-main .contact-form {
   margin: 10px 0 0 0;
-}
-
-.contact-main .contact-form .contact-form__upper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  .contact-form__upper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .contact-form__upper .contact-details__input {
@@ -319,16 +302,15 @@ body {
   padding-left: 10px;
 }
 
-.contact-form .contact-form__upper-right .phonenum input {
-  width: 416px;
-  height: 42px;
-  padding-left: 50px;
-  font-size: 14px;
-  font-family: "Outfit", sans-serif;
-}
-
 .contact-form .contact-form__upper-right .phonenum {
   margin: 10px 0 30px 0;
+  input {
+    width: 416px;
+    height: 42px;
+    padding-left: 50px;
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+  }
 }
 
 .required-field::after {
@@ -360,13 +342,12 @@ body {
   display: flex;
   cursor: pointer;
   accent-color: $secondary-color;
-}
-
-.contact-main .contact-form__radioboxes input {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  margin: 0 10px 0 20px;
+  input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 10px 0 20px;
+  }
 }
 
 .contact-main .contact-form__radioboxes .radio-custom,
@@ -393,29 +374,21 @@ body {
 .contact-form .contact-form-lower .contact-form__checkboxes {
   display: flex;
   margin-left: 18px;
-}
-
-.contact-form .contact-form-lower .contact-form__checkboxes input {
-  width: 18px;
-  height: 18px;
-  accent-color: $secondary-color;
-}
-
-.contact-form .contact-form-lower .contact-form__checkboxes label {
-  font-family: $main-font;
-  margin: 0 48px 0 19px;
-  font-size: 14px;
-  align-items: flex-start;
+  input {
+    width: 18px;
+    height: 18px;
+    accent-color: $secondary-color;
+  }
+  label {
+    font-family: $main-font;
+    margin: 0 48px 0 19px;
+    font-size: 14px;
+    align-items: flex-start;
+  }
 }
 
 .contact-form .contact-form-lower .contact__button {
-  border-radius: 3px;
-  width: 196px;
-  height: 46px;
-  background-color: $secondary-color;
-  color: $color-white;
-  font-size: 14px;
-  cursor: pointer;
+  @include button-size;
   margin: 60px 0 0 250px;
 }
 
@@ -426,27 +399,32 @@ body {
   justify-content: space-between;
   padding: 30px 64px;
   background-color: $background-color;
+  address .payment-methods {
+    display: flex;
+    flex-grow: 2;
+  }
+  address .payment-methods img {
+    margin-right: 36px;
+  }
 }
 
 .footer__section .footer__left-section {
   width: 50%;
-}
-
-.footer__section .footer__left-section .brand-name {
-  font-weight: 700;
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.footer__section .footer__left-section .footer__input {
-  width: 295px;
-  padding: 12px 5px;
-  margin-right: 15px;
-  font-size: 15px;
-  border: 0;
-  outline: 0;
-  border-bottom: 2px solid #a2a2a2;
-  background-color: $background-color;
+  .brand-name {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .footer__input {
+    width: 295px;
+    padding: 12px 5px;
+    margin-right: 15px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #a2a2a2;
+    background-color: $background-color;
+  }
 }
 
 .footer__section .footer__input:focus {
@@ -454,37 +432,31 @@ body {
 }
 
 .footer__section .footer__button {
-  width: 196px;
-  height: 46px;
-  background-color: $secondary-color;
-  color: #fff;
-  font-size: 14px;
+  @include button-size;
   margin-top: 30px;
-  cursor: pointer;
 }
 
 .footer__section .footer__right-section {
   display: flex;
   justify-content: space-between;
   gap: 244px;
-}
-
-.footer__section .footer__right-section ul {
-  list-style: none;
-}
-
-.footer__section .footer__right-section ul li {
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-
-.footer__section .footer__right-section address {
-  font-style: normal;
-  font-size: 18px;
-}
-
-.footer__section .footer__right-section address p {
-  margin-bottom: 8px;
+  ul {
+    list-style: none;
+  }
+  li {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  address {
+    font-style: normal;
+    font-size: 18px;
+  }
+  address p {
+    margin-bottom: 8px;
+  }
+  address img {
+    margin-top: 25px;
+  }
 }
 
 .footer__section .footer__right-section address .contact-number,
@@ -492,26 +464,9 @@ body {
   color: #00000099;
 }
 
-.footer__section .footer__right-section address img {
-  margin-top: 25px;
-}
-
 .footer__section .bottom-footer {
   background-color: $background-color;
   padding: 10px 30px;
-}
-
-.footer__section address a {
-  text-decoration: underline;
-}
-
-.footer__section address .payment-methods {
-  display: flex;
-  flex-grow: 2;
-}
-
-.footer__section address .payment-methods img {
-  margin-right: 36px;
 }
 
 .footer-divider {
@@ -523,22 +478,20 @@ body {
 
 .second-footer {
   padding: 24px 0;
-}
-
-.second-footer ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  color: #9b9b9b;
-  list-style-type: none;
-}
-
-.second-footer ul .allrights {
-  align-items: center;
-  padding-left: 610px;
-  align-self: center;
-  color: #000;
-  width: 70%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #9b9b9b;
+    list-style-type: none;
+  }
+  ul .allrights {
+    align-items: center;
+    padding-left: 610px;
+    align-self: center;
+    color: #000;
+    width: 70%;
+  }
 }
 
 .second-footer .miscellaneous {
