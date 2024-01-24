@@ -222,7 +222,7 @@ body {
   grid-template-columns: auto;
   justify-content: start;
   grid-gap: 19px;
-  margin: 0 0 0 42px;
+  margin-left: 42px;
   font-style: normal;
   font-size: 14px; }
   .address_icon-vertic .fb-icon-text {
