@@ -1,10 +1,14 @@
 @charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 body {
   font-family: "Outfit", sans-serif;
@@ -145,7 +149,7 @@ body {
   cursor: pointer;
   margin-top: 30px; }
   .hero-button:hover {
-    background-color: green; }
+    background-color: #276a3b; }
 
 /* About us */
 .about {
@@ -324,7 +328,7 @@ body {
   cursor: pointer;
   margin: 60px 0 0 250px; }
   .contact-form .contact-form-lower .contact__button:hover {
-    background-color: green; }
+    background-color: #276a3b; }
 
 /* Footer */
 .footer__section {
@@ -367,7 +371,7 @@ body {
   cursor: pointer;
   margin-top: 30px; }
   .footer__section .footer__button:hover {
-    background-color: green; }
+    background-color: #276a3b; }
 
 .footer__section .footer__right-section {
   display: flex;

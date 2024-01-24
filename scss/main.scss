@@ -1,27 +1,9 @@
-// colors
-$main-font: "Outfit", sans-serif;
-$primary-color: #e5e5e5;
-$secondary-color: #3a6150;
-$background-color: #f9f9f9;
-$color-white: #fff;
-
 // partials
+@import "reset";
 @import "buttons";
+@import "colors";
 
 // code
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $main-font;
-  background-color: $primary-color;
-}
-
 .wrapper {
   background-color: $background-color;
   width: 1440px;

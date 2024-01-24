@@ -1,4 +1,4 @@
-@mixin button-size {
+@mixin button-size() {
   background-color: $secondary-color;
   color: $color-white;
   width: 196px;
@@ -8,6 +8,6 @@
   cursor: pointer;
 
   &:hover {
-    background-color: green;
+    background-color: #276a3b;
   }
 }
