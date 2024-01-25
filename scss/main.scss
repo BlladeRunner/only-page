@@ -15,7 +15,7 @@
 .navbar {
   align-items: center;
   padding: 20px 0;
-  background-color: $color-white;
+  background-color: $white-color;
 }
 
 .navbar {
@@ -41,13 +41,13 @@
     padding: 0 1rem 0 1rem;
     list-style: none;
     display: block;
-    border-right: 1px #000 solid;
+    border-right: 1px $black-color solid;
   }
 }
 
 .navbar ul li:last-child {
   border-right: 0;
-  li:last-child::after {
+  &::after {
     font-family: FontAwesome;
     content: "\f107";
     padding-left: 4px;
@@ -56,8 +56,8 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: #000;
-  li a:hover {
+  color: $black-color;
+  &:hover {
     color: $secondary-color;
   }
 }
@@ -67,7 +67,7 @@
   opacity: 0;
   position: absolute;
   display: none;
-  background: $color-white;
+  background: $white-color;
 }
 
 .navbar ul li:hover > ul,
@@ -88,20 +88,14 @@
   text-align: left;
   margin-bottom: 20px;
   border-style: none;
-}
-
-.navbar ul li ul li a:hover {
-  padding-left: 10px;
-  border-left: 2px solid $secondary-color;
-  transition: all 0.3s ease;
-}
-
-.navbar ul li ul li a {
-  transition: all 0.8s ease;
-}
-
-.navbar ul li ul li:last-child::after {
-  content: "";
+  &:last-child::after {
+    content: "";
+  }
+  a:hover {
+    padding-left: 10px;
+    border-left: 2px solid $secondary-color;
+    transition: all 0.3s ease;
+  }
 }
 
 .navbar .search-container {
@@ -115,7 +109,7 @@
   border-color: $secondary-color;
   font-family: "Outfit", sans-serif;
   padding-left: 16px;
-  input::placeholder {
+  &::placeholder {
     color: $secondary-color;
   }
 }
@@ -129,7 +123,7 @@
   border: none;
   cursor: pointer;
   .fa-search {
-    color: $color-white;
+    color: $white-color;
     font-size: 18px;
   }
 }
@@ -169,14 +163,14 @@
 .about {
   display: flex;
   justify-content: flex-start;
-  background-color: $color-white;
+  background-color: $white-color;
   padding: 80px 64px;
   gap: 18px;
 }
 
 .about-container {
   background-color: $secondary-color;
-  color: $color-white;
+  color: $white-color;
   padding: 20px;
   width: 50%;
   display: flex;
@@ -193,7 +187,7 @@
   flex-direction: column;
   justify-content: space-between;
   a {
-    color: $color-white;
+    color: $white-color;
   }
   ::after {
     content: " →";
@@ -216,14 +210,14 @@
 
 .contact-main .contact-container {
   display: flex;
-  background-color: $color-white;
+  background-color: $white-color;
   border-radius: 10px;
   width: 1312px;
 }
 
 .contact-main .contact-form {
   display: inline-block;
-  background-color: $color-white;
+  background-color: $white-color;
   padding: 30px 10px;
   border-radius: 10px;
 }
@@ -297,7 +291,7 @@
 
 .required-field::after {
   content: "*";
-  color: red;
+  color: $red-color;
   margin-right: 2px;
 }
 
@@ -443,7 +437,7 @@
 
 .footer__section .footer__right-section address .contact-number,
 .footer__section .footer__right-section address .contact-email {
-  color: #00000099;
+  color: $dark-color;
 }
 
 .footer__section .bottom-footer {
@@ -464,21 +458,21 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: #9b9b9b;
+    color: $grey-color;
     list-style-type: none;
   }
   ul .allrights {
     align-items: center;
     padding-left: 610px;
     align-self: center;
-    color: #000;
+    color: $black-color;
     width: 70%;
   }
 }
 
 .second-footer .miscellaneous {
   font-size: 14px;
-  color: #9b9b9b;
+  color: $grey-color;
   gap: 15px;
   margin-right: 64px;
 }

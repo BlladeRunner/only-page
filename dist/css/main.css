@@ -58,7 +58,7 @@ body {
 .navbar ul li:last-child {
   border-right: 0;
 }
-.navbar ul li:last-child li:last-child::after {
+.navbar ul li:last-child::after {
   font-family: FontAwesome;
   content: "\f107";
   padding-left: 4px;
@@ -68,7 +68,7 @@ body {
   text-decoration: none;
   color: #000;
 }
-.navbar ul li a li a:hover {
+.navbar ul li a:hover {
   color: #3a6150;
 }
 
@@ -99,19 +99,13 @@ body {
   margin-bottom: 20px;
   border-style: none;
 }
-
+.navbar ul li ul li:last-child::after {
+  content: "";
+}
 .navbar ul li ul li a:hover {
   padding-left: 10px;
   border-left: 2px solid #3a6150;
   transition: all 0.3s ease;
-}
-
-.navbar ul li ul li a {
-  transition: all 0.8s ease;
-}
-
-.navbar ul li ul li:last-child::after {
-  content: "";
 }
 
 .navbar .search-container {
@@ -126,7 +120,7 @@ body {
   font-family: "Outfit", sans-serif;
   padding-left: 16px;
 }
-.navbar .search-container input input::placeholder {
+.navbar .search-container input::placeholder {
   color: #3a6150;
 }
 
@@ -312,7 +306,7 @@ body {
 
 .required-field::after {
   content: "*";
-  color: red;
+  color: #ff0000;
   margin-right: 2px;
 }
 
