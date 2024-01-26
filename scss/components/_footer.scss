@@ -1,0 +1,106 @@
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 64px;
+  background-color: $background-color;
+  address .payment-methods {
+    display: flex;
+    flex-grow: 2;
+  }
+  address .payment-methods img {
+    margin-right: 36px;
+  }
+}
+
+.footer__section .footer__left-section {
+  width: 50%;
+  .brand-name {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .footer__input {
+    width: 295px;
+    padding: 12px 5px;
+    margin-right: 15px;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #a2a2a2;
+    background-color: $background-color;
+  }
+}
+
+.footer__section .footer__input:focus {
+  border: transparent;
+}
+
+.footer__section .footer__button {
+  @include button;
+  margin-top: 30px;
+}
+
+.footer__section .footer__right-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 244px;
+  ul {
+    list-style: none;
+  }
+  li {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  address {
+    font-style: normal;
+    font-size: 18px;
+  }
+  address p {
+    margin-bottom: 8px;
+  }
+  address img {
+    margin-top: 25px;
+  }
+}
+
+.footer__section .footer__right-section address .contact-number,
+.footer__section .footer__right-section address .contact-email {
+  color: $dark-color;
+}
+
+.footer__section .bottom-footer {
+  background-color: $background-color;
+  padding: 10px 30px;
+}
+
+.footer-divider {
+  background-color: #eee;
+  border: 0 none;
+  color: #eee;
+  height: 1px;
+}
+
+.second-footer {
+  padding: 24px 0;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: $grey-color;
+    list-style-type: none;
+  }
+  ul .allrights {
+    align-items: center;
+    padding-left: 610px;
+    align-self: center;
+    color: $black-color;
+    width: 70%;
+  }
+}
+
+.second-footer .miscellaneous {
+  font-size: 14px;
+  color: $grey-color;
+  gap: 15px;
+  margin-right: 64px;
+}
