@@ -19,3 +19,9 @@ body {
 }
 
 $main-font: "Outfit", sans-serif;
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}

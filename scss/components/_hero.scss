@@ -3,21 +3,21 @@
   display: flex;
   justify-content: space-between;
   background-color: $background-color;
-}
-
-.hero-content {
-  margin-top: 186px;
-  h1 {
-    font-size: 35px;
-    margin-bottom: 30px;
-    color: $secondary-color;
-  }
-  h3 {
-    margin-bottom: 10px;
-    color: $secondary-color;
-  }
-  p {
-    margin-right: 111px;
+  .hero-content {
+    margin-top: 186px;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 30px;
+      color: $secondary-color;
+    }
+    h3 {
+      margin-bottom: 10px;
+      color: $secondary-color;
+    }
+    p {
+      margin-right: 111px;
+      max-width: 58ch;
+    }
   }
 }
 
