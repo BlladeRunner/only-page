@@ -2,18 +2,18 @@
   align-items: center;
   padding: 20px 0;
   background-color: $white-color;
-  .container {
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1 1 100%;
     margin: 0 auto;
     padding: 0 64px;
-    .nav-links {
-      display: flex;
-      gap: 77px;
-      align-items: center;
-    }
+  }
+  &__nav-links {
+    display: flex;
+    gap: 77px;
+    align-items: center;
   }
   ul {
     display: flex;
@@ -78,7 +78,7 @@
   }
 }
 
-.navbar .search-container {
+.navbar .navbar__search-container {
   float: right;
   input {
     width: 376px;
@@ -91,18 +91,17 @@
       color: $secondary-color;
     }
   }
-}
-
-.navbar .search-container__button {
-  float: right;
-  padding: 14px 14px;
-  margin-top: 0;
-  background: $secondary-color;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  .fa-search {
-    color: $white-color;
-    font-size: 18px;
+  & .navbar__search-container__button {
+    float: right;
+    padding: 14px 14px;
+    margin-top: 0;
+    background: $secondary-color;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    .fa-search {
+      color: $white-color;
+      font-size: 18px;
+    }
   }
 }

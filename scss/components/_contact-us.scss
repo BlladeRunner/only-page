@@ -1,4 +1,4 @@
-.contact-main {
+.contact {
   display: flex;
   justify-content: space-around;
   background-color: #71837b;
@@ -7,19 +7,19 @@
     font-size: 40px;
     padding-bottom: 0;
   }
-  .contact-container {
+  &__main {
     display: flex;
     background-color: $white-color;
     border-radius: 10px;
     width: 1312px;
   }
-  .contact-form {
+  &__form {
     display: inline-block;
     background-color: $white-color;
     padding: 30px 10px;
     border-radius: 10px;
   }
-  .container__image-container {
+  &__image-container {
     display: flex;
     flex-direction: column;
     background-image: url("../img/Rectangle 573.svg");
@@ -35,44 +35,42 @@
       vertical-align: bottom;
     }
   }
-}
-
-.address_icon-vertic {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: start;
-  grid-gap: 19px;
-  margin-left: 42px;
-  font-style: normal;
-  font-size: 14px;
-  .fb-icon-text {
-    grid-column-start: 2;
-    margin-top: 2px;
+  &__address-icon-vertic {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    grid-gap: 19px;
+    margin-left: 42px;
+    font-style: normal;
+    font-size: 14px;
+    .fb-icon-text {
+      grid-column-start: 2;
+      margin-top: 2px;
+    }
   }
-}
-
-.address_icon-horizon {
-  display: flex;
-  gap: 36px;
-  margin: 233px 0 0 42px;
+  &__address-icon-horizon {
+    display: flex;
+    gap: 36px;
+    margin: 233px 0 0 42px;
+  }
 }
 
 /* Contact Us right sector / upper */
 
-.contact-form {
+.contact__form {
   margin: 10px 0 0 0;
-  .contact-form__upper {
+  .contact__form-upper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .contact-details__input {
+  .contact__details-input {
     width: 416px;
     height: 42px;
     font-size: 14px;
     margin: 10px 0;
     padding-left: 10px;
   }
-  .contact-form__upper-right .phonenum {
+  .contact__form-upper-right .phonenum {
     margin: 10px 0 30px 0;
     input {
       width: 416px;
@@ -82,7 +80,7 @@
       font-family: "Outfit", sans-serif;
     }
   }
-  .contact-form__upper-left {
+  .contact__form-upper-left {
     padding: 0 15px 0 10px;
   }
   .required-field::after {
@@ -92,16 +90,11 @@
   }
 }
 
-.contact-form__upper-left input,
-.contact-form__upper-right input {
-  margin: 10px 0 30px 0;
-}
-
 /* Contact Us right sector / lower */
-.contact-form .contact-form-lower {
+.contact__form .contact__form-lower {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  .contact-form__radioboxes {
+  .contact__form-radioboxes {
     display: flex;
     cursor: pointer;
     accent-color: $secondary-color;
@@ -114,28 +107,28 @@
   }
 }
 
-.contact-form__radioboxes .radio-custom,
-.contact-form__radioboxes .radio-custom-label {
+.contact__form-radioboxes .radio-custom,
+.contact__form-radioboxes .radio-custom-label {
   vertical-align: middle;
 }
 
-.contact-form__radioboxes .radio-custom-label {
+.contact__form-radioboxes .radio-custom-label {
   font-family: $main-font;
   font-size: 14px;
 }
 
-.contact-form-lower .contact-form__message {
+.contact__form-lower .contact__form-message {
   margin: 15px 10px 0 10px;
 }
 
-.contact-form-lower .contact-form__message-input {
+.contact__form-lower .contact__form-message-input {
   font-family: $main-font;
   height: 132px;
   padding: 0 0 90px 5px;
   margin: 10px 8px 30px;
 }
 
-.contact-form-lower .contact-form__checkboxes {
+.contact__form-lower .contact__form-checkboxes {
   display: flex;
   margin-left: 18px;
   input {

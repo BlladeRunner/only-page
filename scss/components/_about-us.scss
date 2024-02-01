@@ -4,7 +4,7 @@
   background-color: $white-color;
   padding: 80px 64px;
   gap: 18px;
-  .about-container {
+  &__container {
     display: flex;
     background-color: $secondary-color;
     color: $white-color;
@@ -12,21 +12,20 @@
     width: 50%;
     gap: 18px;
   }
-  .about-img {
+  &__about-img {
     width: 180px;
     height: 230px;
   }
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  a {
-    color: $white-color;
-  }
-  ::after {
-    content: " →";
-    text-decoration: none;
+  &__about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+      color: $white-color;
+    }
+    ::after {
+      content: " →";
+      text-decoration: none;
+    }
   }
 }

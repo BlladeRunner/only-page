@@ -24,17 +24,17 @@ body {
   align-items: center;
   padding: 20px 0;
   background-color: #fff; }
-  .navbar .container {
+  .navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1 1 100%;
     margin: 0 auto;
     padding: 0 64px; }
-    .navbar .container .nav-links {
-      display: flex;
-      gap: 77px;
-      align-items: center; }
+  .navbar__nav-links {
+    display: flex;
+    gap: 77px;
+    align-items: center; }
   .navbar ul {
     display: flex;
     padding-right: 5rem; }
@@ -86,29 +86,28 @@ body {
     border-left: 2px solid #3a6150;
     transition: all 0.3s ease; }
 
-.navbar .search-container {
+.navbar .navbar__search-container {
   float: right; }
-  .navbar .search-container input {
+  .navbar .navbar__search-container input {
     width: 376px;
     height: 48px;
     font-size: 18px;
     border-color: #3a6150;
     font-family: "Outfit", sans-serif;
     padding-left: 16px; }
-    .navbar .search-container input::placeholder {
+    .navbar .navbar__search-container input::placeholder {
       color: #3a6150; }
-
-.navbar .search-container__button {
-  float: right;
-  padding: 14px 14px;
-  margin-top: 0;
-  background: #3a6150;
-  font-size: 17px;
-  border: none;
-  cursor: pointer; }
-  .navbar .search-container__button .fa-search {
-    color: #fff;
-    font-size: 18px; }
+  .navbar .navbar__search-container .navbar__search-container__button {
+    float: right;
+    padding: 14px 14px;
+    margin-top: 0;
+    background: #3a6150;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; }
+    .navbar .navbar__search-container .navbar__search-container__button .fa-search {
+      color: #fff;
+      font-size: 18px; }
 
 /* Hero  */
 .hero {
@@ -148,152 +147,145 @@ body {
   background-color: #fff;
   padding: 80px 64px;
   gap: 18px; }
-  .about .about-container {
+  .about__container {
     display: flex;
     background-color: #3a6150;
     color: #fff;
     padding: 20px;
     width: 50%;
     gap: 18px; }
-  .about .about-img {
+  .about__about-img {
     width: 180px;
     height: 230px; }
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  .about-text a {
-    color: #fff; }
-  .about-text ::after {
-    content: " →";
-    text-decoration: none; }
+  .about__about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .about__about-text a {
+      color: #fff; }
+    .about__about-text ::after {
+      content: " →";
+      text-decoration: none; }
 
 /* Contact Us*/
-.contact-main {
+.contact {
   display: flex;
   justify-content: space-around;
   background-color: #71837b;
   padding: 64px 0; }
-  .contact-main h1 {
+  .contact h1 {
     font-size: 40px;
     padding-bottom: 0; }
-  .contact-main .contact-container {
+  .contact__main {
     display: flex;
     background-color: #fff;
     border-radius: 10px;
     width: 1312px; }
-  .contact-main .contact-form {
+  .contact__form {
     display: inline-block;
     background-color: #fff;
     padding: 30px 10px;
     border-radius: 10px; }
-  .contact-main .container__image-container {
+  .contact__image-container {
     display: flex;
     flex-direction: column;
     background-image: url("../img/Rectangle 573.svg");
     height: 637px;
     min-width: 425px;
     border-radius: 10px; }
-    .contact-main .container__image-container h1 {
+    .contact__image-container h1 {
       margin: 42px 42px 0 42px; }
-    .contact-main .container__image-container p {
+    .contact__image-container p {
       margin: 16px 42px 56px 42px;
       font-size: 14px;
       vertical-align: bottom; }
-
-.address_icon-vertic {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: start;
-  grid-gap: 19px;
-  margin-left: 42px;
-  font-style: normal;
-  font-size: 14px; }
-  .address_icon-vertic .fb-icon-text {
-    grid-column-start: 2;
-    margin-top: 2px; }
-
-.address_icon-horizon {
-  display: flex;
-  gap: 36px;
-  margin: 233px 0 0 42px; }
+  .contact__address-icon-vertic {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: start;
+    grid-gap: 19px;
+    margin-left: 42px;
+    font-style: normal;
+    font-size: 14px; }
+    .contact__address-icon-vertic .fb-icon-text {
+      grid-column-start: 2;
+      margin-top: 2px; }
+  .contact__address-icon-horizon {
+    display: flex;
+    gap: 36px;
+    margin: 233px 0 0 42px; }
 
 /* Contact Us right sector / upper */
-.contact-form {
+.contact__form {
   margin: 10px 0 0 0; }
-  .contact-form .contact-form__upper {
+  .contact__form .contact__form-upper {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-  .contact-form .contact-details__input {
+  .contact__form .contact__details-input {
     width: 416px;
     height: 42px;
     font-size: 14px;
     margin: 10px 0;
     padding-left: 10px; }
-  .contact-form .contact-form__upper-right .phonenum {
+  .contact__form .contact__form-upper-right .phonenum {
     margin: 10px 0 30px 0; }
-    .contact-form .contact-form__upper-right .phonenum input {
+    .contact__form .contact__form-upper-right .phonenum input {
       width: 416px;
       height: 42px;
       padding-left: 50px;
       font-size: 14px;
       font-family: "Outfit", sans-serif; }
-  .contact-form .contact-form__upper-left {
+  .contact__form .contact__form-upper-left {
     padding: 0 15px 0 10px; }
-  .contact-form .required-field::after {
+  .contact__form .required-field::after {
     content: "*";
     color: #ff0000;
     margin-right: 2px; }
 
-.contact-form__upper-left input,
-.contact-form__upper-right input {
-  margin: 10px 0 30px 0; }
-
 /* Contact Us right sector / lower */
-.contact-form .contact-form-lower {
+.contact__form .contact__form-lower {
   display: grid;
   grid-template-rows: repeat(2, 1fr); }
-  .contact-form .contact-form-lower .contact-form__radioboxes {
+  .contact__form .contact__form-lower .contact__form-radioboxes {
     display: flex;
     cursor: pointer;
     accent-color: #3a6150; }
-    .contact-form .contact-form-lower .contact-form__radioboxes input {
+    .contact__form .contact__form-lower .contact__form-radioboxes input {
       width: 20px;
       height: 20px;
       cursor: pointer;
       margin: 0 10px 0 20px; }
 
-.contact-form__radioboxes .radio-custom,
-.contact-form__radioboxes .radio-custom-label {
+.contact__form-radioboxes .radio-custom,
+.contact__form-radioboxes .radio-custom-label {
   vertical-align: middle; }
 
-.contact-form__radioboxes .radio-custom-label {
+.contact__form-radioboxes .radio-custom-label {
   font-family: "Outfit", sans-serif;
   font-size: 14px; }
 
-.contact-form-lower .contact-form__message {
+.contact__form-lower .contact__form-message {
   margin: 15px 10px 0 10px; }
 
-.contact-form-lower .contact-form__message-input {
+.contact__form-lower .contact__form-message-input {
   font-family: "Outfit", sans-serif;
   height: 132px;
   padding: 0 0 90px 5px;
   margin: 10px 8px 30px; }
 
-.contact-form-lower .contact-form__checkboxes {
+.contact__form-lower .contact__form-checkboxes {
   display: flex;
   margin-left: 18px; }
-  .contact-form-lower .contact-form__checkboxes input {
+  .contact__form-lower .contact__form-checkboxes input {
     width: 18px;
     height: 18px;
     accent-color: #3a6150; }
-  .contact-form-lower .contact-form__checkboxes label {
+  .contact__form-lower .contact__form-checkboxes label {
     font-family: "Outfit", sans-serif;
     margin: 0 48px 0 19px;
     font-size: 14px;
     align-items: flex-start; }
-  .contact-form-lower .contact-form__checkboxes .contact__button {
+  .contact__form-lower .contact__form-checkboxes .contact__button {
     background-color: #3a6150;
     color: #fff;
     width: 196px;
@@ -302,7 +294,7 @@ body {
     font-size: 14px;
     cursor: pointer;
     margin: 60px 0 0 250px; }
-    .contact-form-lower .contact-form__checkboxes .contact__button:hover {
+    .contact__form-lower .contact__form-checkboxes .contact__button:hover {
       background-color: #276a3b; }
 
 /* Footer */
