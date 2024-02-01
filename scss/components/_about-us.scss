@@ -5,11 +5,11 @@
   padding: 80px 64px;
   gap: 18px;
   .about-container {
+    display: flex;
     background-color: $secondary-color;
     color: $white-color;
     padding: 20px;
     width: 50%;
-    display: flex;
     gap: 18px;
   }
   .about-img {

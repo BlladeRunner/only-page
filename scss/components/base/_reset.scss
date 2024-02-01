@@ -1,10 +1,5 @@
 @import "colors";
 
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
 *,
 *::after,
 *::before {
@@ -13,15 +8,14 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   background-color: $primary-color;
+  box-sizing: border-box;
 }
 
 $main-font: "Outfit", sans-serif;
-
-h1,
-h2,
-h3 {
-  text-wrap: balance;
-}
