@@ -298,23 +298,18 @@ body {
       background-color: #276a3b; }
 
 /* Footer */
-.footer__section {
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 30px 64px;
   background-color: #f9f9f9; }
-  .footer__section address .payment-methods {
-    display: flex;
-    flex-grow: 2; }
-  .footer__section address .payment-methods img {
-    margin-right: 36px; }
-  .footer__section .footer__left-section {
+  .footer__left-section {
     width: 50%; }
-    .footer__section .footer__left-section .brand-name {
+    .footer__left-section .brand-name {
       font-weight: 700;
       font-size: 48px;
       margin-bottom: 20px; }
-    .footer__section .footer__left-section .footer__input {
+    .footer__left-section .footer__input {
       width: 295px;
       padding: 12px 5px;
       margin-right: 15px;
@@ -323,9 +318,9 @@ body {
       outline: 0;
       border-bottom: 2px solid #a2a2a2;
       background-color: #f9f9f9; }
-  .footer__section .footer__input:focus {
+  .footer__input:focus {
     border: transparent; }
-  .footer__section .footer__button {
+  .footer__button {
     background-color: #3a6150;
     color: #fff;
     width: 196px;
@@ -334,52 +329,53 @@ body {
     font-size: 14px;
     cursor: pointer;
     margin-top: 30px; }
-    .footer__section .footer__button:hover {
+    .footer__button:hover {
       background-color: #276a3b; }
-
-.footer__right-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 244px; }
-  .footer__right-section ul {
-    list-style: none; }
-  .footer__right-section li {
-    font-size: 18px;
-    margin-bottom: 16px; }
-  .footer__right-section address {
-    font-style: normal;
-    font-size: 18px; }
-  .footer__right-section address p {
-    margin-bottom: 8px; }
-  .footer__right-section address img {
-    margin-top: 25px; }
-
-.footer__right-section address .contact-number,
-.footer__right-section address .contact-email {
-  color: #00000099; }
-
-.footer-divider {
-  background-color: #eee;
-  border: 0 none;
-  color: #eee;
-  height: 1px; }
-
-.second-footer {
-  padding: 24px 0; }
-  .second-footer ul {
+  .footer__right-section {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    color: #9b9b9b;
-    list-style-type: none; }
-  .second-footer ul .allrights {
-    align-items: center;
-    padding-left: 610px;
-    align-self: center;
-    color: #000;
-    width: 70%; }
-  .second-footer .miscellaneous {
-    font-size: 14px;
-    color: #9b9b9b;
-    gap: 15px;
-    margin-right: 64px; }
+    gap: 244px; }
+    .footer__right-section ul {
+      list-style: none; }
+    .footer__right-section li {
+      font-size: 18px;
+      margin-bottom: 16px; }
+    .footer__right-section address {
+      font-style: normal;
+      font-size: 18px; }
+    .footer__right-section address p {
+      margin-bottom: 8px; }
+    .footer__right-section address img {
+      margin-top: 25px; }
+  .footer__right-section address .footer__contact-number,
+  .footer__right-section address .footer__contact-email {
+    color: #00000099; }
+  .footer__payment-methods {
+    display: flex;
+    flex-grow: 2; }
+    .footer__payment-methods img {
+      margin-right: 36px; }
+  .footer__divider {
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px; }
+  .footer__bottom-section {
+    padding: 24px 0; }
+    .footer__bottom-section ul {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #9b9b9b;
+      list-style-type: none; }
+    .footer__bottom-section ul .allrights {
+      align-items: center;
+      padding-left: 610px;
+      align-self: center;
+      color: #000;
+      width: 70%; }
+    .footer__bottom-section .miscellaneous {
+      font-size: 14px;
+      color: #9b9b9b;
+      gap: 15px;
+      margin-right: 64px; }
