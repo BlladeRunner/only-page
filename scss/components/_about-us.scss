@@ -4,7 +4,7 @@
   background-color: $white-color;
   padding: 80px 64px;
   gap: 18px;
-  &__container {
+  &__main-container {
     display: flex;
     background-color: $secondary-color;
     color: $white-color;
@@ -12,11 +12,11 @@
     width: 50%;
     gap: 18px;
   }
-  &__about-img {
+  &__image {
     width: 180px;
     height: 230px;
   }
-  &__about-text {
+  &__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
