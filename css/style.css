@@ -167,7 +167,9 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: #71837b;
-  padding: 64px 0; }
+  padding: 64px 0;
+  /* Contact Us right sector / upper */
+  /* Contact Us right sector / lower */ }
   .contact h1 {
     font-size: 40px;
     padding-bottom: 0; }
@@ -209,88 +211,79 @@ body {
     display: flex;
     gap: 36px;
     margin: 233px 0 0 42px; }
-
-/* Contact Us right sector / upper */
-.contact__form {
-  margin: 10px 0 0 0; }
-  .contact__form .contact__form-upper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .contact__form .contact__details-input {
-    width: 416px;
-    height: 42px;
-    font-size: 14px;
-    margin: 10px 0;
-    padding-left: 10px; }
-  .contact__form .contact__form-upper-right .phonenum {
-    margin: 10px 0 30px 0; }
-    .contact__form .contact__form-upper-right .phonenum input {
+  .contact__form {
+    margin: 10px 0 0 0; }
+    .contact__form .contact__form-upper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+    .contact__form .contact__details-input {
       width: 416px;
       height: 42px;
-      padding-left: 50px;
       font-size: 14px;
-      font-family: "Outfit", sans-serif; }
-  .contact__form .contact__form-upper-left {
-    padding: 0 15px 0 10px; }
-  .contact__form .required-field::after {
-    content: "*";
-    color: #ff0000;
-    margin-right: 2px; }
-
-/* Contact Us right sector / lower */
-.contact__form .contact__form-lower {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr); }
-  .contact__form .contact__form-lower .contact__form-radioboxes {
-    display: flex;
-    cursor: pointer;
-    accent-color: #3a6150; }
-    .contact__form .contact__form-lower .contact__form-radioboxes input {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      margin: 0 10px 0 20px; }
-
-.contact__form-radioboxes .radio-custom,
-.contact__form-radioboxes .radio-custom-label {
-  vertical-align: middle; }
-
-.contact__form-radioboxes .radio-custom-label {
-  font-family: "Outfit", sans-serif;
-  font-size: 14px; }
-
-.contact__form-lower .contact__form-message {
-  margin: 15px 10px 0 10px; }
-
-.contact__form-lower .contact__form-message-input {
-  font-family: "Outfit", sans-serif;
-  height: 132px;
-  padding: 0 0 90px 5px;
-  margin: 10px 8px 30px; }
-
-.contact__form-lower .contact__form-checkboxes {
-  display: flex;
-  margin-left: 18px; }
-  .contact__form-lower .contact__form-checkboxes input {
-    width: 18px;
-    height: 18px;
-    accent-color: #3a6150; }
-  .contact__form-lower .contact__form-checkboxes label {
+      margin: 10px 0;
+      padding-left: 10px; }
+    .contact__form .contact__form-upper-right .phonenum {
+      margin: 10px 0 30px 0; }
+      .contact__form .contact__form-upper-right .phonenum input {
+        width: 416px;
+        height: 42px;
+        padding-left: 50px;
+        font-size: 14px;
+        font-family: "Outfit", sans-serif; }
+    .contact__form .contact__form-upper-left {
+      padding: 0 15px 0 10px; }
+    .contact__form .required-field::after {
+      content: "*";
+      color: #ff0000;
+      margin-right: 2px; }
+  .contact .contact__form-radioboxes .radio-custom,
+  .contact .contact__form-radioboxes .radio-custom-label {
+    vertical-align: middle; }
+  .contact .contact__form-radioboxes .radio-custom-label {
     font-family: "Outfit", sans-serif;
-    margin: 0 48px 0 19px;
-    font-size: 14px;
-    align-items: flex-start; }
-  .contact__form-lower .contact__form-checkboxes .contact__button {
-    background-color: #3a6150;
-    color: #fff;
-    width: 196px;
-    height: 46px;
-    border-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 60px 0 0 250px; }
-    .contact__form-lower .contact__form-checkboxes .contact__button:hover {
-      background-color: #276a3b; }
+    font-size: 14px; }
+  .contact__form .contact__form-lower {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); }
+    .contact__form .contact__form-lower .contact__form-radioboxes {
+      display: flex;
+      cursor: pointer;
+      accent-color: #3a6150; }
+      .contact__form .contact__form-lower .contact__form-radioboxes input {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin: 0 10px 0 20px; }
+    .contact__form .contact__form-lower .contact__form-message {
+      margin: 15px 10px 0 10px; }
+    .contact__form .contact__form-lower .contact__form-message-input {
+      font-family: "Outfit", sans-serif;
+      height: 132px;
+      padding: 0 0 90px 5px;
+      margin: 10px 8px 30px; }
+    .contact__form .contact__form-lower .contact__form-checkboxes {
+      display: flex;
+      margin-left: 18px; }
+      .contact__form .contact__form-lower .contact__form-checkboxes input {
+        width: 18px;
+        height: 18px;
+        accent-color: #3a6150; }
+      .contact__form .contact__form-lower .contact__form-checkboxes label {
+        font-family: "Outfit", sans-serif;
+        margin: 0 48px 0 19px;
+        font-size: 14px;
+        align-items: flex-start; }
+      .contact__form .contact__form-lower .contact__form-checkboxes .contact__button {
+        background-color: #3a6150;
+        color: #fff;
+        width: 196px;
+        height: 46px;
+        border-radius: 3px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 60px 0 0 250px; }
+        .contact__form .contact__form-lower .contact__form-checkboxes .contact__button:hover {
+          background-color: #276a3b; }
 
 /* Footer */
 .footer {
