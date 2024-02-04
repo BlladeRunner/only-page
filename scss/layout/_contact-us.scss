@@ -86,16 +86,16 @@
       margin-right: 2px;
     }
   }
-  .contact__form-radioboxes .radio-custom,
-  .contact__form-radioboxes .radio-custom-label {
+  &__form-radioboxes .radio-custom,
+  &__form-radioboxes .radio-custom-label {
     vertical-align: middle;
   }
-  .contact__form-radioboxes .radio-custom-label {
+  &__form-radioboxes .radio-custom-label {
     font-family: $main-font;
     font-size: 14px;
   }
   /* Contact Us right sector / lower */
-  &__form .contact__form-lower {
+  &__form-lower {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     .contact__form-radioboxes {
@@ -132,7 +132,7 @@
         font-size: 14px;
         align-items: flex-start;
       }
-      .contact__button {
+      .contact__form-button {
         @include button;
         margin: 60px 0 0 250px;
       }
