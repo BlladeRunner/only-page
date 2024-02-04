@@ -1,7 +1,7 @@
 // partials
-@import "components/base/reset";
-@import "components/base/button";
-@import "components/base/colors";
+@import "base/reset";
+@import "base/button";
+@import "base/colors";
 
 // code
 .wrapper {
@@ -11,12 +11,12 @@
 }
 
 /* Navbar */
-@import "components/layout/navbar";
+@import "layout/navbar";
 /* Hero  */
-@import "components/layout/hero";
+@import "layout/hero";
 /* About us */
-@import "components/layout/about-us";
+@import "layout/about-us";
 /* Contact Us*/
-@import "components/layout/contact-us";
+@import "layout/contact-us";
 /* Footer */
-@import "components/layout/footer";
+@import "layout/footer";
