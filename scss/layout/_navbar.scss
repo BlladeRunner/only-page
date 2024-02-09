@@ -52,7 +52,7 @@
       text-align: left;
       margin-bottom: 20px;
       border-style: none;
-      &:last-child::after {
+      &:not(:last-child)::after {
         content: "";
       }
       a:hover {

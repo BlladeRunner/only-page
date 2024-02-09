@@ -81,7 +81,7 @@ body {
   margin-bottom: 20px;
   border-style: none;
 }
-.navbar .navbar__nav-links .nav-lang__drop-down .lang-menu li:last-child::after {
+.navbar .navbar__nav-links .nav-lang__drop-down .lang-menu li:not(:last-child)::after {
   content: "";
 }
 .navbar .navbar__nav-links .nav-lang__drop-down .lang-menu li a:hover {
