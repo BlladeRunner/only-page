@@ -134,6 +134,10 @@ body {
     margin-top: 30px; }
     .hero__button:hover {
       background-color: #276a3b; }
+  .hero__image {
+    background-image: url(/img/unsplash_W5XTTLpk1-I.svg);
+    width: 500px;
+    height: 550px; }
 
 /* About us */
 .about {
@@ -150,8 +154,10 @@ body {
     width: 50%;
     gap: 18px; }
   .about__image {
-    width: 180px;
-    height: 230px; }
+    background-image: url("../img/Rectangle 570.svg"); }
+    .about__image--1, .about__image--2 {
+      width: 180px;
+      height: 230px; }
   .about__text {
     display: flex;
     flex-direction: column;

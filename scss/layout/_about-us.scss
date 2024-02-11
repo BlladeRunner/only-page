@@ -13,8 +13,12 @@
     gap: 18px;
   }
   &__image {
-    width: 180px;
-    height: 230px;
+    background-image: url("../img/Rectangle 570.svg");
+    &--1,
+    &--2 {
+      width: 180px;
+      height: 230px;
+    }
   }
   &__text {
     display: flex;

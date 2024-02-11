@@ -23,4 +23,9 @@
     @include button;
     margin-top: 30px;
   }
+  &__image {
+    background-image: url(/img/unsplash_W5XTTLpk1-I.svg);
+    width: 500px;
+    height: 550px;
+  }
 }
