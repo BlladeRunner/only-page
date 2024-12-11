@@ -86,14 +86,17 @@
       margin-right: 2px;
     }
   }
-  &__form-radioboxes .radio-custom,
-  &__form-radioboxes .radio-custom-label {
+
+  &__form-radioboxes .contact__form-radio-input,
+  &__form-radioboxes .contact__form-radio-label {
     vertical-align: middle;
   }
-  &__form-radioboxes .radio-custom-label {
+
+  &__form-radioboxes .contact__form-radio-label {
     font-family: $main-font;
     font-size: 14px;
   }
+
   /* Contact Us right sector / lower */
   &__form-lower {
     display: grid;

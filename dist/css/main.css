@@ -297,10 +297,10 @@ body {
   color: #ff0000;
   margin-right: 2px;
 }
-.contact__form-radioboxes .radio-custom, .contact__form-radioboxes .radio-custom-label {
+.contact__form-radioboxes .contact__form-radio-input, .contact__form-radioboxes .contact__form-radio-label {
   vertical-align: middle;
 }
-.contact__form-radioboxes .radio-custom-label {
+.contact__form-radioboxes .contact__form-radio-label {
   font-family: "Outfit", sans-serif;
   font-size: 14px;
 }
